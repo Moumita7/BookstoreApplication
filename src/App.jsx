@@ -1,12 +1,13 @@
 
 import './App.css'
+import AllRoutes from './Pages/AllRoutes'
 
 function App() {
 
 
   return (
     <>
-     <h1>Book Managment</h1>
+<AllRoutes/>
     </>
   )
 }

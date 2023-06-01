@@ -13,13 +13,29 @@ const getBooksFailureAction=()=>{
     return {type:GET_BOOKS_FAILURE}
 }
 
-export const  getBooks=(dispatch)=>{
+// export const  getBooks =(dispatch)=>{
+//     dispatch(getBooksRequestAction())
+//     axios.get("https://json-server-vercel-psi-ebon.vercel.app/books")
+//     .then((res)=>{
+//         // console.log("bk",res.data)
+//      dispatch(getBooksSuccessAction(res.data))
+//     })
+//     .catch((err)=>{
+//         console.log(err)
+//         dispatch(getBooksFailureAction())
+//     })
+// }
+
+
+export const  getBooks = (params)=>(dispatch)=>{
     dispatch(getBooksRequestAction())
-    axios.get("https://json-server-vercel-psi-ebon.vercel.app/books")
+    axios.get("https://json-server-vercel-psi-ebon.vercel.app/books",params)
     .then((res)=>{
+        // console.log("bk",res.data)
      dispatch(getBooksSuccessAction(res.data))
     })
     .catch((err)=>{
+        console.log(err)
         dispatch(getBooksFailureAction())
     })
 }
