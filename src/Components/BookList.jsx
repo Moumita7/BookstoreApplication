@@ -10,12 +10,12 @@ import { useLocation, useSearchParams } from "react-router-dom"
 const BookList = () => {
 
     const dispatch=useDispatch()
-    const books=useSelector((store)=>store.books)
+    const {books}=useSelector((store)=>store.books)
 
     const location=useLocation()
     const [searchParams]=useSearchParams()
     // console.log(location)
-    // console.log(books)
+    console.log("book",books)
 
     useEffect(()=>{
       let paramObj={

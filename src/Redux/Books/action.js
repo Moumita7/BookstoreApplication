@@ -29,7 +29,7 @@ const getBooksFailureAction=()=>{
 
 export const  getBooks = (params)=>(dispatch)=>{
     dispatch(getBooksRequestAction())
-    axios.get("https://json-server-vercel-psi-ebon.vercel.app/books",params)
+    axios.get("https://json-server-vercel-psi-ebon.vercel.app/bookss",params)
     .then((res)=>{
         // console.log("bk",res.data)
      dispatch(getBooksSuccessAction(res.data))

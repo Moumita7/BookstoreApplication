@@ -7,7 +7,7 @@ const initialState={
     isError:false
 }
 
-export const reducer=(state=initialState,{type,payload})=>{
+export const bookReducer=(state=initialState,{type,payload})=>{
     switch(type){
         case GET_BOOKS_REQUEST:
             return {...state,isLoading:true}
