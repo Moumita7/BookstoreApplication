@@ -8,7 +8,7 @@ import {
   Text,
   useToast,
 } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { removeItemFromCart, updateCartItem } from "../Redux/Cart/action";
 

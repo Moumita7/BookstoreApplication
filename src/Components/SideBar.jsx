@@ -31,22 +31,34 @@ setSearchParams(params)
   },[category])
   return (
     <div>
-      <h3>Filter BY</h3>
+      <h3>Filter BY CATEGORY</h3>
       <div>
-        <input onChange={filterCategoty}  type="checkbox" value="Novel" checked={category.includes("Novel")}/>
-        <label>Novel</label>
+        <input onChange={filterCategoty}  type="checkbox" value="Classic" checked={category.includes("Classic")}/>
+        <label>Classic</label>
       </div>
       <div>
-        <input onChange={filterCategoty}  type="checkbox" value="Motivational" checked={category.includes("Motivational")} />
-        <label>Motivational</label>
+        <input onChange={filterCategoty}  type="checkbox" value="Dystopian" checked={category.includes("Dystopian")} />
+        <label>Dystopian</label>
       </div>
       <div>
-        <input onChange={filterCategoty}  type="checkbox" value="Thriller" checked={category.includes("Thriller")}/>
-        <label>Thriller</label>
+        <input onChange={filterCategoty}  type="checkbox" value="Modernist" checked={category.includes("Modernist")}/>
+        <label>Modernist</label>
       </div>
       <div>
-        <input onChange={filterCategoty}  type="checkbox" value="Science_Fiction" checked={category.includes("Science_Fiction")} />
-        <label>Science Fiction</label>
+        <input onChange={filterCategoty}  type="checkbox" value="Romance" checked={category.includes("Romance")} />
+        <label>Romance</label>
+      </div>
+      <div>
+        <input onChange={filterCategoty}  type="checkbox" value="Fantasy" checked={category.includes("Fantasy")} />
+        <label>Fantasy</label>
+      </div>
+      <div>
+        <input onChange={filterCategoty}  type="checkbox" value="Adventure" checked={category.includes("Adventure")} />
+        <label>Adventure</label>
+      </div>
+      <div>
+        <input onChange={filterCategoty}  type="checkbox" value="Historical Fiction" checked={category.includes("Historical Fiction")} />
+        <label>Historical Fiction</label>
       </div>
     </div>
   )
