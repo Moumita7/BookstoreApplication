@@ -5,7 +5,7 @@ import {
   Grid,
   GridItem,
   Image,
-  Text,
+
   useToast,
 } from "@chakra-ui/react";
 import  { useEffect, useState } from "react";
@@ -61,10 +61,7 @@ const CartCard = ({ cart }) => {
         />
       </GridItem>
       <GridItem>
-        {/* <Text m={"auto"} as={"p"} fontSize={"lg"}>
-          Director:-{" "}
-          {cart.title.length < 8 ? cart.title : `${cart.title.slice(0, 8)}...`}
-        </Text> */}
+ 
       </GridItem>
       <GridItem>
         <ButtonGroup

@@ -89,7 +89,7 @@ const CheckOut = () => {
   };
 
   const totalItems = cartData.length;
-  // const totalPrice = cartData.reduce((acc, item) => acc + item.price, 0);
+
 
   function InitialFocus() {
     const { isOpen, onOpen, onClose } = useDisclosure();

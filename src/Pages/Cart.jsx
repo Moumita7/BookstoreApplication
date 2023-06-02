@@ -1,7 +1,6 @@
 
 import CartLists from "../Components/CartLists";
 import {  useSelector } from "react-redux";
-
 import { useNavigate } from "react-router-dom";
 import Loading from "../Components/Loading";
 import EmptyCard from "../Components/EmptyCard";

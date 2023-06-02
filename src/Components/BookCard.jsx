@@ -1,16 +1,11 @@
 import { addItemToCart } from "../Redux/Cart/action";
 import {
-  // Box,
   Button,
-  // Heading,
-  // Image,
-  // Stack,
-  // Text,
   useToast,
 } from "@chakra-ui/react";
-// import React from "react";
+
 import { useDispatch, useSelector } from "react-redux";
-// import { Link } from "react-router-dom";
+
 
 const BookCard = ({book}) => {
 
@@ -58,7 +53,7 @@ console.log("okk")
 <h3>author: {book.author}</h3>
 <h3>price: {book.price}</h3>
 <h3>category: {book.category}</h3>
-{/* <p>release_year: {book.release_year}</p> */}
+
 <Button
         isLoading={loading}
         // isDisabled={cartData.find((item) => item._id === newItem._id)}
