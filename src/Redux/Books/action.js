@@ -28,10 +28,13 @@ const getBooksFailureAction=()=>{
 
 
 export const  getBooks = (params)=>(dispatch)=>{
-    dispatch(getBooksRequestAction())
+    dispatch(getBooksRequestAction()) //loading
     axios.get("https://json-server-vercel-psi-ebon.vercel.app/bookss",params)
+    //
+
+    //
     .then((res)=>{
-        // console.log("bk",res.data)
+        // console.log("bk",res.data) 
      dispatch(getBooksSuccessAction(res.data))
     })
     .catch((err)=>{
@@ -40,3 +43,11 @@ export const  getBooks = (params)=>(dispatch)=>{
     })
 }
 
+
+// let obj={
+//     params:{
+//         // category:
+//         _sort:"price",
+//         _order:"asc"
+//     }
+// }

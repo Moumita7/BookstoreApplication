@@ -10,7 +10,7 @@ const initialState={
 export const bookReducer=(state=initialState,{type,payload})=>{
     switch(type){
         case GET_BOOKS_REQUEST:
-            return {...state,isLoading:true}
+            return {...state,isLoading:true,isError:false}
         case GET_BOOKS_SUCCESS:
             return {...state,isLoading:false,books:payload}
         case GET_BOOKS_FAILURE:

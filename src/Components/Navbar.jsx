@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <Box display={"flex"} justifyContent={"space-between"} p="10px" mb="22px" className="nav">
+    <Box bg="teal.300" display={"flex"} justifyContent={"space-between"} p="10px" mb="22px" className="nav">
     
       <Link to="/">Home</Link>
       {/* <Link to="/login">Login</Link> */}

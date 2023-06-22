@@ -60,7 +60,7 @@ const EmptyCard = ({ name }) => {
           </Heading>
           <Stack direction={"row"} align={"center"}>
             <Link to="/">
-              <Button colorScheme="pink">Continue Shoping</Button>
+              <Button colorScheme="teal">Continue Shoping</Button>
             </Link>
           </Stack>
         </Stack>

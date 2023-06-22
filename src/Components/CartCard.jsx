@@ -2,9 +2,12 @@ import {
   Button,
   ButtonGroup,
   CloseButton,
+  Flex,
   Grid,
   GridItem,
   Image,
+
+  Text,
 
   useToast,
 } from "@chakra-ui/react";
@@ -45,17 +48,17 @@ const CartCard = ({ cart }) => {
     <Grid
       templateColumns="repeat(4, 1fr)"
       alignItems="center"
-      justifyContent={"space-between"}
+      // justifyContent={"space-between"}
       p={4}
-      width={"full"}
+      // width={"full"}
       gap={2}
       mb={2}
       boxShadow={"lg"}
     >
       <GridItem>
         <Image
-          width={"100px"}
-          height={"100px"}
+          width={"200px"}
+          height={"250px"}
           alt={cart.title}
           src={cart.image}
         />
@@ -104,7 +107,9 @@ const CartCard = ({ cart }) => {
           variant="outline"
           onClick={() => handleRemove(cart._id)}
         />
+        
       </GridItem>
+      
     </Grid>
   );
 };

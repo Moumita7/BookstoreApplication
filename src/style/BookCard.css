@@ -4,6 +4,7 @@
   grid-template-rows: repeat(auto,200px);
   grid-gap: 10px;
   padding: 10px;
+  /* border: "2px solid red"; */
 }
 
 .nav{

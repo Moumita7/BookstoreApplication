@@ -16,12 +16,16 @@ const CartLists = ({ cartItems, handleOrder }) => {
   }, [cartItems]);
 
   return (
-    <Box mt={"80px"} height={"100vh"}>
+    <Box mt={"30px"} height={"100vh"} gap={"50px"}  display={"flex"} >
+    <Box >
       {cartItems.map((cart) => (
         <CartCard key={cart._id} cart={cart} />
       ))}
-
-      <Flex px={4} gap={"10px"} alignItems={"center"}>
+      </Box>
+<Box   boxShadow={"md"}>
+      <Flex px={10} gap={"20px"} flexDir={"column"} alignItems={"center"} mt="20px">
+      <Text as={"p"}>Total Amount:- $ {total}</Text>
+      <hr />
         <Button
           borderRadius="lg"
           colorScheme="teal"
@@ -34,8 +38,10 @@ const CartLists = ({ cartItems, handleOrder }) => {
         >
           Place Order
         </Button>
-        <Text as={"p"}>Total Amount:- $ {total}</Text>
+       
       </Flex>
+
+      </Box>
     </Box>
   );
 };
